@@ -1,0 +1,1 @@
+Hi ! This project aims at reproducing the behavior of a pyramidal cell in NEURON (simulation environement), BrainscaleS 2 (BSS 2 : Neuromorphic platform) and as an intermediary step (PyNN with Neuron). See the report for more information. To use it you need to install the neuron and pynn library and be able to access the Cluster at HeidelBerg (BrainscalseS2).

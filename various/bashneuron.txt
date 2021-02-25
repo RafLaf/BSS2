@@ -1,0 +1,622 @@
+source /home/raphael/.virtualenvs/dreem/bin/activate
+raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ source /home/raphael/.virtualenvs/dreem/bin/activate
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+        1 
+NEURON: undefined variable ismenu
+ in demo_PY_RS.oc near line 77
+ }
+  ^
+        xopen("demo_PY_RS.oc")
+      execute1("{xopen("de...")
+    load_file("/home/raph...")
+Traceback (most recent call last):
+  File "/home/raphael/Documents/BSS2/scripts/import_neuron.py", line 6, in <module>
+    h.test()
+AttributeError: 'hoc.HocObject' object has no attribute 'test'
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+        1 
+NEURON: undefined variable ismenu
+ in demo_PY_RS.oc near line 77
+ }
+  ^
+        xopen("demo_PY_RS.oc")
+      execute1("{xopen("de...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+        1 
+NEURON: undefined variable ismenu
+ in demo_PY_RS.oc near line 77
+ }
+  ^
+        xopen("demo_PY_RS.oc")
+      execute1("{xopen("de...")
+    load_file("/home/raph...")
+Traceback (most recent call last):
+  File "/home/raphael/Documents/BSS2/scripts/import_neuron.py", line 6, in <module>
+    h.ismenu=1
+LookupError: 'ismenu' is not a defined hoc variable name.
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+Traceback (most recent call last):
+  File "/home/raphael/Documents/BSS2/scripts/import_neuron.py", line 5, in <module>
+    h.ismenu=1
+LookupError: 'ismenu' is not a defined hoc variable name.
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: Couldn't find: /home/raphael/Documents/BSS2/cortex_r1/cortex/run_demo.hoc
+ near line 0
+ objref hoc_obj_[2]
+                   ^
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: graphList not an array variable
+ in rundemo.hoc near line 29
+                graphList[i].remove_all()
+               ^
+        xopen("rundemo.hoc")
+      execute1("{xopen("ru...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python -i  /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+>>> h.topology()
+
+
+1.0
+>>> h
+<TopLevelHocInterpreter>
+>>> h.section
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'hoc.HocObject' object has no attribute 'section'
+>>> h.section(0.5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'hoc.HocObject' object has no attribute 'section'
+>>> h.restart()
+NEURON: restart not enough arguments
+ near line 0
+ ^
+        restart()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+RuntimeError: hoc error
+>>> 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python -i  /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+>>> 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python -i  /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'filename', 'h', 'neuron', 'np', 'webbrowser']
+>>> dir['h']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> global()
+  File "<stdin>", line 1
+    global()
+          ^
+SyntaxError: invalid syntax
+>>> globals()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x7fe318d72ac0>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'h': <TopLevelHocInterpreter>, 'np': <module 'numpy' from '/home/raphael/.virtualenvs/dreem/lib/python3.8/site-packages/numpy/__init__.py'>, 'filename': '/home/raphael/Documents/BSS2/cortex_r1/cortex/mosinit.hoc', 'neuron': <module 'neuron' from '/home/raphael/.virtualenvs/dreem/lib/python3.8/site-packages/neuron/__init__.py'>, 'webbrowser': <module 'webbrowser' from '/usr/lib/python3.8/webbrowser.py'>}
+>>> locals()
+{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x7fe318d72ac0>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'h': <TopLevelHocInterpreter>, 'np': <module 'numpy' from '/home/raphael/.virtualenvs/dreem/lib/python3.8/site-packages/numpy/__init__.py'>, 'filename': '/home/raphael/Documents/BSS2/cortex_r1/cortex/mosinit.hoc', 'neuron': <module 'neuron' from '/home/raphael/.virtualenvs/dreem/lib/python3.8/site-packages/neuron/__init__.py'>, 'webbrowser': <module 'webbrowser' from '/usr/lib/python3.8/webbrowser.py'>}
+>>> dir()
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'filename', 'h', 'neuron', 'np', 'webbrowser']
+>>> %who
+  File "<stdin>", line 1
+    %who
+    ^
+SyntaxError: invalid syntax
+>>> %who
+  File "<stdin>", line 1
+    %who
+    ^
+SyntaxError: invalid syntax
+>>> %whos
+  File "<stdin>", line 1
+    %whos
+    ^
+SyntaxError: invalid syntax
+>>> 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+        1 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: graphList not an array variable
+ in rundemo.hoc near line 29
+                graphList[i].remove_all()
+               ^
+        xopen("rundemo.hoc")
+      execute1("{xopen("ru...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python -i  /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: graphList not an array variable
+ in rundemo.hoc near line 29
+                graphList[i].remove_all()
+               ^
+        xopen("rundemo.hoc")
+      execute1("{xopen("ru...")
+    load_file("/home/raph...")
+>>> 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+        1 
+NEURON: undefined variable ismenu
+ in demo_PY_RS.oc near line 77
+ }
+  ^
+        xopen("demo_PY_RS.oc")
+      execute1("{xopen("de...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: Couldn't find: /home/raphael/Documents/BSS2/cortex_r1/cortex/stdrun.hoc
+ near line 0
+ objref hoc_obj_[2]
+                   ^
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+sed: -e expression #1, char 19: extra characters after command
+Couldn't find a file that declares /home/raphael/Documents/BSS2/cortex_r1/cortex/sPY_template
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+NEURON: syntax error
+ in sPY_template near line 52
+        insert hh2              // Hodgin-Huxley INa and IK 
+           ^
+        xopen("sPY_template")
+      execute1("{xopen("sP...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: syntax error
+ in hh2.mod near line 1
+ TITLE Hippocampal HH channels
+                 ^
+        xopen("hh2.mod")
+      execute1("{xopen("hh...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+NEURON: Section access unspecified
+ in test.ses near line 23
+ }
+  ^
+        Electrode[0].sectionname("")
+      Electrode[0].init(0)
+    xopen("test.ses")
+  execute1("{xopen("te...")
+and others
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: Couldn't find: /home/raphael/Documents/BSS2/cortex_r1/cortex/nrngui.hoc
+ near line 0
+ objref hoc_obj_[2]
+                   ^
+NEURON: graphList not an array variable
+ in rundemo.hoc near line 29
+                graphList[i].remove_all()
+               ^
+        xopen("rundemo.hoc")
+      execute1("{xopen("ru...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: graphList not an array variable
+ in rundemo.hoc near line 29
+                graphList[i].remove_all()
+               ^
+        xopen("rundemo.hoc")
+      execute1("{xopen("ru...")
+    load_file("/home/raph...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/scripts/import_neuron.py
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+        1 
+        1 
+        1 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+NEURON: Couldn't find: demo_PY_RS.oc
+ near line 0
+ objref hoc_obj_[2]
+                   ^
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/dreem-challange-main$ cd 
+(dreem) raphael@raphael-Aspire-E5-575:~$ cd Documents/
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents$ cd B
+bash: cd: B: No such file or directory
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents$ CD BSS2/cortex_r1/cortex/
+CD: command not found
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents$ cd 7 BSS2/cortex_r1/cortex/
+bash: cd: too many arguments
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents$ cd BSS2/cortex_r1/cortex/
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+NEURON: undefined variable ismenu
+ in demo_PY_RS.oc near line 77
+ }
+  ^
+        xopen("demo_PY_RS.oc")
+      execute1("{xopen("de...")
+    load_file(1, "demo_PY_RS.oc")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: Electrode is not a template
+ in demo_PY_RSnoGUI.oc near line 89
+        PY[i].soma El[i] = new Electrode()
+                                   ^
+        xopen("demo_PY_RS...")
+      execute1("{xopen("de...")
+    load_file(1, "demo_PY_RS...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: Electrode is not a template
+ in demo_PY_RSnoGUI.oc near line 89
+        PY[i].soma El[i] = new Electrode()
+                                   ^
+        xopen("demo_PY_RS...")
+      execute1("{xopen("de...")
+    load_file(1, "demo_PY_RS...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: Electrode is not a template
+ in demo_PY_RSnoGUI.oc near line 79
+        PY[i].soma El[i] = new Electrode()
+                                   ^
+        xopen("demo_PY_RS...")
+      execute1("{xopen("de...")
+    load_file("demo_PY_RS...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: Electrode is not a template
+ in demo_PY_RSnoGUI.oc near line 79
+        PY[i].soma El[i] = new Electrode()
+                                   ^
+        xopen("demo_PY_RS...")
+      execute1("{xopen("de...")
+    load_file(1, "demo_PY_RS...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+NEURON: Couldn't find: electrode.hoc
+ near line 0
+ objref hoc_obj_[2]
+                   ^
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: Electrode is not a template
+ in demo_PY_RSnoGUI.oc near line 79
+        PY[i].soma El[i] = new Electrode()
+                                   ^
+        xopen("demo_PY_RS...")
+      execute1("{xopen("de...")
+    load_file(1, "demo_PY_RS...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+NEURON: run not declared at the top level
+ in electrod.hoc near line 79
+ external run, set_v_init, stoppedrun, addplot
+            ^
+        xopen("electrod.hoc")
+      execute1("{xopen("el...")
+    load_file("electrod.hoc")
+Segmentation fault (core dumped)
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python -i  /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+>>> 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python  /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+NEURON: unable to open font "*helvetica-medium-r-normal*--14*", using "fixed"
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+stim not a public member of IClamp
+NEURON: IClamp stim
+ in demo_PY_RSnoGUI.oc near line 83
+ }
+  ^
+        xopen("demo_PY_RS...")
+      execute1("{xopen("de...")
+    load_file(1, "demo_PY_RS...")
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python -i /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+>>> 
+(dreem) raphael@raphael-Aspire-E5-575:~/Documents/BSS2/cortex_r1/cortex$ /home/raphael/.virtualenvs/dreem/bin/python -i /home/raphael/Documents/BSS2/cortex_r1/cortex/import_neuron.py
+        1 
+ 
+>> Transient time of 0  ms
+ 
+ 
+<<==================================>>
+<<            CREATE CELLS          >>
+<<==================================>>
+ 
+ 
+ << defining template for one-compartment sPY cell >> 
+ 
+        1 
+ 
+<< sPY: passive, INa, IK, IM inserted >>
+ 
+>>> h.PY
+PY[?]
+>>> h.PY[0]
+sPY[0]
+>>> vm=h.Vector()
+>>> vm
+Vector[0]
+>>> vm.record()
+NEURON: record not enough arguments
+ near line 0
+ ^
+        Vector[0].record()
+oc_restore_code tobj_count=1 should be 0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+RuntimeError: hoc error
+>>> vm.record(h.PY[0]._ref_v(0.5))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'hoc.HocObject' object has no attribute '_ref_v'
+>>> vm.record(h.PY[0].soma._ref_v(0.5))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not a HocTopLevelInterpreter or HocObject
+>>> 
+KeyboardInterrupt
+>>> vm.record(h.PY[0].soma(0.5)._ref_v)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object is not callable
+>>> vm.record(h.PY[0].soma()._ref_v)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object is not callable
+>>> vm.record(h.PY[0].soma._ref_v)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not a HocTopLevelInterpreter or HocObject
+>>> vm.record(h.PY[0].soma[0](0.5)._ref_v)
+Vector[0]
+>>> h.run()
+0.0
+>>> h.t
+999.9999999996382
+>>> vm
+Vector[0]
+>>> np.array(vm)
+array([-70.        , -70.        , -70.00000385, ..., -71.09524095,
+       -71.09488115, -71.0945216 ])
+>>> import matplotlib.pyplot as plt
+>>> plt.plot(vm)
+[<matplotlib.lines.Line2D object at 0x7fee69df02b0>]
+>>> plt.show()
+>>> h.IClamp()
+IClamp[1]
+>>> h.Vector(np.arange(0,10,1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt
+>>> h.Vector(np.arange(0,10000,0.1))
+Vector[1]
+>>> rampstim=IClamp(0.5,sec=h.PY[0].soma[0](0.5))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt
+>>> rampstim=h.IClamp(0.5,sec=h.PY[0].soma[0](0.5))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: sec is not a Section
+>>> rampstim=h.IClamp(0.5,sec=h.PY[0].soma[0])
+>>> rampstim
+IClamp[2]
+>>> ramp=h.vector(h.Vector(np.arange(0,10000,0.1)))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'hoc.HocObject' object has no attribute 'vector'
+>>> ramp=h.Vector(np.arange(0,10000,0.1)))
+  File "<stdin>", line 1
+    ramp=h.Vector(np.arange(0,10000,0.1)))
+                                         ^
+SyntaxError: unmatched ')'
+>>> ramp=h.Vector(np.arange(0,10000,0.1))
+>>> ramp.play(rampstim._ref_amp,0.1)
+Vector[2]
+>>> h.init()
+0.0
+>>> h.run()
+0.0
+>>> t.t
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 't' is not defined
+>>> h.t
+999.9999999996382
+>>> plt.plot(vm)
+[<matplotlib.lines.Line2D object at 0x7fee5dda8c40>]
+>>> plt.show()
+

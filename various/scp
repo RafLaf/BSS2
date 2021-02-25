@@ -1,0 +1,3 @@
+scp -P 11022 rlafargue@gitviz.kip.uni-heidelberg.de:~/workspace/my_data.mat /home/raphael/Desktop/
+
+scp -P 11022 rlafargue@gitviz.kip.uni-heidelberg.de:~/workspace/pynn-brainscales/brainscales2/examples/v.pdf /home/raphael/Desktop/

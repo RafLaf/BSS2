@@ -1,0 +1,5 @@
+LL : obtained with code in my_neuronsv3.py
+LL2: obtained the same way but change membrane capacitance from 63 to 10.
+LL3 : obtained the same way but change membrane capacitance from 63 to 10. + refratatory time from 120 to 30
+LL363 same as LL3 but on wafer 63 instead of 69
+LL4 : LL3 with new injected current list cur4 

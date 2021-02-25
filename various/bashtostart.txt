@@ -1,0 +1,171 @@
+install' finished successfully (9.290s)
+rlafargue@helvetica:~/workspace$ c pynn_brainscales2_test_population.py
+/.singularity.d/actions/exec: 9: exec: pynn_brainscales2_test_population.py: not found
+rlafargue@helvetica:~/workspace$ export SINGULARITYENV_PREPEND_PATH=`pwd`/bin:$SINGULARITYENV_PREPEND_PATH
+rlafargue@helvetica:~/workspace$ export SINGULARITYENV_LD_LIBRARY_PATH=`pwd`/lib:$SINGULARITYENV_LD_LIBRARY_PATH
+rlafargue@helvetica:~/workspace$ export PYTHONPATH=`pwd`/lib:$PYTHONPATH
+rlafargue@helvetica:~/workspace$ export PATH=`pwd`/bin:$PATH
+rlafargue@helvetica:~/workspace$ c pynn_brainscales2_test_population.py
+Traceback (most recent call last):
+  File "/wang/users/rlafargue/cluster_home/workspace/bin/pynn_brainscales2_test_population.py", line 5, in <module>
+    import pynn_brainscales.brainscales2 as pynn
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/pynn_brainscales/brainscales2/__init__.py", line 12, in <module>
+    from pynn_brainscales.brainscales2 import simulator
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/pynn_brainscales/brainscales2/simulator.py", line 7, in <module>
+    from pynn_brainscales.brainscales2.standardmodels.cells import HXNeuron, \
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/pynn_brainscales/brainscales2/standardmodels/cells.py", line 5, in <module>
+    from dlens_vx_v2 import lola, hal, halco
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/dlens_vx_v2/__init__.py", line 4, in <module>
+    import dlens_vx_v2.lola
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/dlens_vx_v2/lola/__init__.py", line 1, in <module>
+    from pylola_vx_v2 import *
+ImportError: /wang/users/rlafargue/cluster_home/workspace/lib/pylola_vx_v2.cpython-38-x86_64-linux-gnu.so: undefined symbol: _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+rlafargue@helvetica:~/workspace$ echo $PATH
+/wang/users/rlafargue/cluster_home/workspace/bin:/wang/users/rlafargue/cluster_home/bin:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/bin:/wang/environment/software/container/waf/2020-12-08_2/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+rlafargue@helvetica:~/workspace$ build/haldls/pystadls/pystadls_vx_v2.cbuild/haldls/pystadls/pystadls_vx_v2.c^C
+rlafargue@helvetica:~/workspace$ ^C
+rlafargue@helvetica:~/workspace$ c++filt _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+lola::vx::v2::AtomicNeuron::set_from(haldls::vx::NeuronBackendConfig<halco::hicann_dls::vx::v2::Coordinates> const&)
+rlafargue@helvetica:~/workspace$ find / -name liblola_vx_v2.so
+find: ‘/root’: Permission denied
+find: ‘/wang/lost+found’: Permission denied
+^C
+rlafargue@helvetica:~/workspace$ ls /wang/users/rlafargue/cluster_home/workspace/lib/
+__pycache__
+dlens_vx_v2
+libfisch_vx.so
+libflange.so
+libhalco_common.so
+libhalco_hicann_dls_vx.so
+libhalco_hicann_dls_vx_v2.so
+libhalco_hicann_v2.so
+libhaldls_vx_v2.so
+libhostarq.a
+libhwdb4cpp.so
+liblogger.so
+liblogger_cxx2py.so
+liblola_vx_v2.so
+librcf-sf-only.so
+libsctrl.a
+libstadls_vx_v2.so
+pyfisch_vx.cpython-38-x86_64-linux-gnu.so
+pyhalco_common.cpython-38-x86_64-linux-gnu.so
+pyhalco_common_patch.cpython-38.pyc
+pyhalco_common_patch.cpython-38.pyo
+pyhalco_common_patch.py
+pyhalco_common_patch_pypp.cpython-38.pyc
+pyhalco_common_patch_pypp.cpython-38.pyo
+pyhalco_common_patch_pypp.py
+pyhalco_coordinate_iter_all.cpython-38.pyc
+pyhalco_coordinate_iter_all.cpython-38.pyo
+pyhalco_coordinate_iter_all.py
+pyhalco_hicann_dls_vx_patch.cpython-38.pyc
+pyhalco_hicann_dls_vx_patch.cpython-38.pyo
+pyhalco_hicann_dls_vx_patch.py
+pyhalco_hicann_dls_vx_v2.cpython-38-x86_64-linux-gnu.so
+pyhalco_hicann_v2_patch.cpython-38.pyc
+pyhalco_hicann_v2_patch.cpython-38.pyo
+pyhalco_hicann_v2_patch.py
+pyhalco_hicann_v2_patch_genpybind.cpython-38.pyc
+pyhalco_hicann_v2_patch_genpybind.cpython-38.pyo
+pyhalco_hicann_v2_patch_genpybind.py
+pyhalco_test_common.cpython-38.pyc
+pyhalco_test_common.cpython-38.pyo
+pyhalco_test_common.py
+pyhalco_test_hicann_dls_vx_v1.cpython-38.pyc
+pyhalco_test_hicann_dls_vx_v1.cpython-38.pyo
+pyhalco_test_hicann_dls_vx_v1.py
+pyhalco_test_hicann_dls_vx_v2.cpython-38.pyc
+pyhalco_test_hicann_dls_vx_v2.cpython-38.pyo
+pyhalco_test_hicann_dls_vx_v2.py
+pyhalco_test_hicann_v2.cpython-38.pyc
+pyhalco_test_hicann_v2.cpython-38.pyo
+pyhalco_test_hicann_v2.py
+pyhalco_test_utils.cpython-38.pyc
+pyhalco_test_utils.cpython-38.pyo
+pyhalco_test_utils.py
+pyhaldls_vx_v2.cpython-38-x86_64-linux-gnu.so
+pyhxcomm_vx.cpython-38-x86_64-linux-gnu.so
+pylogging.cpython-38-x86_64-linux-gnu.so
+pylola_vx_v2.cpython-38-x86_64-linux-gnu.so
+pynn_brainscales
+pystadls_vx_v2.cpython-38-x86_64-linux-gnu.so
+rlafargue@helvetica:~/workspace$ /wang/users/rlafargue/cluster_home/workspace/lib/
+-bash: /wang/users/rlafargue/cluster_home/workspace/lib/: Is a directory
+rlafargue@helvetica:~/workspace$ echo $PATH
+/wang/users/rlafargue/cluster_home/workspace/bin:/wang/users/rlafargue/cluster_home/bin:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/bin:/wang/environment/software/container/waf/2020-12-08_2/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+rlafargue@helvetica:~/workspace$ export PATH=/wang/users/rlafargue/cluster_home/workspace/lib:$PATH
+rlafargue@helvetica:~/workspace$ echo $PATH
+/wang/users/rlafargue/cluster_home/workspace/lib:/wang/users/rlafargue/cluster_home/workspace/bin:/wang/users/rlafargue/cluster_home/bin:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/bin:/wang/environment/software/container/waf/2020-12-08_2/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+rlafargue@helvetica:~/workspace$ echo $SINGULARITYENV_LD_LIBRARY_PATH
+/wang/users/rlafargue/cluster_home/workspace/lib:/wang/users/rlafargue/cluster_home/lib:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/lib
+rlafargue@helvetica:~/workspace$ c pynn_brainscales2_test_population.py
+Traceback (most recent call last):
+  File "/wang/users/rlafargue/cluster_home/workspace/bin/pynn_brainscales2_test_population.py", line 5, in <module>
+    import pynn_brainscales.brainscales2 as pynn
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/pynn_brainscales/brainscales2/__init__.py", line 12, in <module>
+    from pynn_brainscales.brainscales2 import simulator
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/pynn_brainscales/brainscales2/simulator.py", line 7, in <module>
+    from pynn_brainscales.brainscales2.standardmodels.cells import HXNeuron, \
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/pynn_brainscales/brainscales2/standardmodels/cells.py", line 5, in <module>
+    from dlens_vx_v2 import lola, hal, halco
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/dlens_vx_v2/__init__.py", line 4, in <module>
+    import dlens_vx_v2.lola
+  File "/wang/users/rlafargue/cluster_home/workspace/lib/dlens_vx_v2/lola/__init__.py", line 1, in <module>
+    from pylola_vx_v2 import *
+ImportError: /wang/users/rlafargue/cluster_home/workspace/lib/pylola_vx_v2.cpython-38-x86_64-linux-gnu.so: undefined symbol: _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+rlafargue@helvetica:~/workspace$ export LD_LIBRARY_PATH=/wang/users/rlafargue/cluster_home/workspace/lib:$LD_LIBRARY_PATH
+rlafargue@helvetica:~/workspace$ echo $LD_LIBRARY_PATH
+/wang/users/rlafargue/cluster_home/workspace/lib:/wang/users/rlafargue/cluster_home/lib:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/lib
+rlafargue@helvetica:~/workspace$ c pynn_brainscales2_test_population.py
+/opt/spack_views/visionary-dls/lib/python3.8/site-packages/lazyarray.py:190: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  elif isinstance(value, collections.Sized):  # False for numbers, generators, functions, iterators
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.480s
+
+OK
+rlafargue@helvetica:~/workspace$ pwd
+/wang/users/rlafargue/cluster_home/workspace
+rlafargue@helvetica:~/workspace$ echo pwd
+pwd
+rlafargue@helvetica:~/workspace$ echo `pwd`
+/wang/users/rlafargue/cluster_home/workspace
+rlafargue@helvetica:~/workspace$ echo `pwd`:
+/wang/users/rlafargue/cluster_home/workspace:
+rlafargue@helvetica:~/workspace$ echo PATH
+PATH
+rlafargue@helvetica:~/workspace$ echo $PATH
+/wang/users/rlafargue/cluster_home/workspace/lib:/wang/users/rlafargue/cluster_home/workspace/bin:/wang/users/rlafargue/cluster_home/bin:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/bin:/wang/environment/software/container/waf/2020-12-08_2/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+rlafargue@helvetica:~/workspace$ echo `pwd`
+/wang/users/rlafargue/cluster_home/workspace
+rlafargue@helvetica:~/workspace$ echo `pwd`/bin
+/wang/users/rlafargue/cluster_home/workspace/bin
+rlafargue@helvetica:~/workspace$ /bin
+-bash: /bin: Is a directory
+rlafargue@helvetica:~/workspace$ echo helloworld
+helloworld
+rlafargue@helvetica:~/workspace$ echo $LD_LIBRARY_PATH
+/wang/users/rlafargue/cluster_home/workspace/lib:/wang/users/rlafargue/cluster_home/lib:/wang/environment/software/container/ppu-toolchain/2020-10-01_1/lib
+rlafargue@helvetica:~/workspace$ python pynn_brainscales2_test_population.py
+python: can't open file 'pynn_brainscales2_test_population.py': [Errno 2] No such file or directory
+rlafargue@helvetica:~/workspace$ c pynn_brainscales2_test_population.py
+/opt/spack_views/visionary-dls/lib/python3.8/site-packages/lazyarray.py:190: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+  elif isinstance(value, collections.Sized):  # False for numbers, generators, functions, iterators
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.472s
+
+OK
+rlafargue@helvetica:~/workspace$ rlafargue@helvetica:~/workspace$ c++filt _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+-bash: rlafargue@helvetica:~/workspace$: No such file or directory
+rlafargue@helvetica:~/workspace$ rlafargue@helvetica:~/workspace$ c++filt _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+-bash: rlafargue@helvetica:~/workspace$: No such file or directory
+rlafargue@helvetica:~/workspace$ rlafargue@helvetica:~/workspace$ c++filt _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+-bash: rlafargue@helvetica:~/workspace$: No such file or directory
+rlafargue@helvetica:~/workspace$ rlafargue@helvetica:~/workspace$ c++filt _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+-bash: rlafargue@helvetica:~/workspace$: No such file or directory
+rlafargue@helvetica:~/workspace$ rlafargue@helvetica:~/workspace$ c++filt _ZN4lola2vx2v212AtomicNeuron8set_fromERKN6haldls2vx19NeuronBackendConfigIN5halco10hicann_dls2vx2v211CoordinatesEEE
+-bash: rlafargue@helvetica:~/workspace$: No such file or directory
+rlafargue@helvetica:~/workspace$ 
+
