@@ -4,6 +4,6 @@ The PyNN-BrainscaleS directory is a copy of https://github.com/electronicvisions
 
 The NEURON model is available here : https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=3817#tabs-1
 
-PYNN8pyramidal/cell_type_demonstration.py comes from http://neuralensemble.org/docs/PyNN/index.html
+PYNN_pyramidal/cell_type_demonstration.py comes from http://neuralensemble.org/docs/PyNN/index.html from Andrew Davison
+Special Thanks to Andrew Davison who supervized me during this project and to the team in HeidelBerg ! 
 
-Best
